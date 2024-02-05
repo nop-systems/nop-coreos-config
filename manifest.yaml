@@ -1,13 +1,20 @@
 ref: nop/${basearch}/coreos/${stream}
-rojig:
-  license: MIT
-  name: fedora-coreos
-  summary: nop.systems CoreOS ${stream}
 
 variables:
   stream: stable
   prod: true
 
 releasever: 39
+
+packages:
+  - xe-guest-utilities-latest
+  - kitty-terminfo
+  - vim
+  - jq
+  - bat
+  - zabbix-agent2
+
+repos:
+  - zabbix
 
 include: manifests/fedora-coreos.yaml
