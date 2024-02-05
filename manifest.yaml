@@ -1,11 +1,13 @@
-ref: my/${basearch}/coreos/stable
-include: fedora-coreos-config/manifest.yaml
+ref: nop/${basearch}/coreos/${stream}
+rojig:
+  license: MIT
+  name: nop-coreos
+  summary: nop.systems CoreOS ${stream}
 
-lockfile-repos:
-  - fedora-coreos-pool
+variables:
+  stream: stable
+  prod: true
 
-packages:
-- hdparm
+releasever: 39
 
-repos:
-- fedora
+include: manifests/fedora-coreos.yaml
