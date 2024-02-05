@@ -1,7 +1,7 @@
 ref: nop/${basearch}/coreos/${stream}
 rojig:
   license: MIT
-  name: nop-coreos
+  name: fedora-coreos
   summary: nop.systems CoreOS ${stream}
 
 variables:
