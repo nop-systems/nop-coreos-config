@@ -1,0 +1,11 @@
+ref: my/${basearch}/coreos/stable
+include: fedora-coreos-config/manifest.yaml
+
+lockfile-repos:
+  - fedora-coreos-pool
+
+packages:
+- hdparm
+
+repos:
+- fedora
